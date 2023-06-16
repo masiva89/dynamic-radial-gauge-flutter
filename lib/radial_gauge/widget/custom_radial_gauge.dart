@@ -1,7 +1,5 @@
 // ignore_for_file: unnecessary_getters_setters
 
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 
@@ -37,11 +35,6 @@ class _CustomRadialGaugeState extends State<CustomRadialGauge> {
   double needleValue = 25;
 
   void configRanges() {
-    log(
-      'totalWidth: $totalWidth\n'
-      'rangesPadding: $rangesPadding\n'
-      'rangesLength: ${_pointerRanges.length}\n',
-    );
     double rangeWidth = (totalWidth - (rangesPadding * _pointerRanges.length)) /
         _pointerRanges.length;
     double startValue = 0;
@@ -49,11 +42,6 @@ class _CustomRadialGaugeState extends State<CustomRadialGauge> {
 
     double startWidth = 10;
     //double incrementWidth = 5;
-    log(
-      'rangeWidth: $rangeWidth\n'
-      'startValue: $startValue\n'
-      'endValue: $endValue\n',
-    );
     for (int i = 0; i < _pointerRanges.length; i++) {
       _pointerRanges[i].index = i;
 

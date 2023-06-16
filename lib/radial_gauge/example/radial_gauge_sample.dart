@@ -3,7 +3,7 @@ import 'package:stepper_widget/radial_gauge/data/radial_gauge_data.dart';
 import 'package:stepper_widget/radial_gauge/model/rg_data_model.dart';
 
 import '../model/pointer_range.dart';
-import '../view/custom_radial_gauge.dart';
+import '../widget/custom_radial_gauge.dart';
 
 class RadialGaugeSampleView extends StatefulWidget {
   const RadialGaugeSampleView({super.key});
