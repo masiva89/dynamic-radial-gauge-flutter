@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 import 'package:stepper_widget/radial_gauge/example/radial_gauge_sample.dart';
 
 void main() {

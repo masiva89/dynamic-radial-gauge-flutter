@@ -17,6 +17,7 @@ class PointerRange {
   double? startWidth;
   double? endWidth;
   double? rangeOffset;
+  double? fontSize;
 
   PointerRange({
     required this.startColor,
@@ -37,6 +38,7 @@ class PointerRange {
   GaugeRange build() {
     return GaugeRange(
         label: label,
+        labelStyle: GaugeTextStyle(fontSize: fontSize ?? 10),
         startValue: startValue ?? 0,
         endValue: endValue ?? 0,
         startWidth: startWidth ?? 20,

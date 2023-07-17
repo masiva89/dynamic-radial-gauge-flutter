@@ -23,6 +23,7 @@ class _RadialGaugeSampleViewState extends State<RadialGaugeSampleView> {
     for (var element in rgDataModel.levels!) {
       _pointerRanges.add(
         PointerRange(
+          label: (element.value ?? 0).toString(),
           data: element.name!,
           startColor: Color.fromRGBO(
             element.startColor![0],
@@ -58,8 +59,8 @@ class _RadialGaugeSampleViewState extends State<RadialGaugeSampleView> {
       ),
       body: Center(
         child: SizedBox(
-          width: 150,
-          height: 200,
+          height: MediaQuery.of(context).size.height * 0.5,
+          width: MediaQuery.of(context).size.width * 0.5,
           child: Center(
             child: CustomRadialGauge(
               selectedPointerIndex: _selectedIndex,
