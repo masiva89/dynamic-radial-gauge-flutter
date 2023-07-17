@@ -1,7 +1,6 @@
 // ignore_for_file: unnecessary_getters_setters
 
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 
 import '../model/pointer_range.dart';
